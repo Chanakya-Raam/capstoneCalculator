@@ -1,3 +1,5 @@
+#version 2.0
+#done by chanakya , abhinav , sanjay , pranay 
 # Python program to create a simple GUI
 # calculator using Tkinter
 
@@ -61,7 +63,7 @@ def clear():
 
 
 # Driver code
-if _name_ == "_main_":
+if __name__ == "__main__":
 	# create a GUI window
 	gui = Tk()
 
