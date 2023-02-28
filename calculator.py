@@ -1,5 +1,5 @@
-# Version 1.0 
-# Done by Pranay, Sanjay, Abhinav, Chanakya
+# define a function for each arithmetic operation
+
 def add(num1, num2):
     return num1 + num2
 
