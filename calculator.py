@@ -1,41 +1,32 @@
-# define a function for each arithmetic operation
+# Python program to create a simple GUI
+# calculator using Tkinter
 
-def add(num1, num2):
-    return num1 + num2
+# import everything from tkinter module
+from tkinter import *
 
-def subtract(num1, num2):
-    return num1 - num2
+# globally declare the expression variable
+expression = ""
 
-def multiply(num1, num2):
-    return num1 * num2
 
-def divide(num1, num2):
-    return num1 / num2
+# Function to update expression
+# in the text entry box
+def press(num):
+	# point out the global expression variable
+	global expression
 
-# take input from user
-print("Please select operation -\n" \
-        "1. Add\n" \
-        "2. Subtract\n" \
-        "3. Multiply\n" \
-        "4. Divide\n")
+	# concatenation of string
+	expression = expression + str(num)
 
-choice = int(input("Enter choice (1/2/3/4): "))
+	# update the expression by using set method
+	equation.set(expression)
 
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
 
-# perform the selected operation
-if choice == 1:
-    print(num1, "+", num2, "=", add(num1, num2))
+# Function to evaluate the final expression
+def equalpress():
+	# Try and except statement is used
+	# for handling the errors like zero
+	# division error etc.
 
-elif choice == 2:
-    print(num1, "-", num2, "=", subtract(num1, num2))
-
-elif choice == 3:
-    print(num1, "*", num2, "=", multiply(num1, num2))
-
-elif choice == 4:
-    print(num1, "/", num2, "=", divide(num1, num2))
-
-else:
-    print("Invalid input")
+	# Put that code inside the try block
+	# which may generate the error
+	try:
